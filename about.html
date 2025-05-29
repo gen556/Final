@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>僕のネット</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+<body>
+
+    <style>
+
+        .my-col{
+            background-color: aqua;
+            height: 400px;
+        
+        }
+
+        .transparent-bg-text {
+            width: 100%;
+            height: 400px;
+            position: relative;
+            padding: 20px;
+            color:black;
+            z-index: 1;
+            }
+
+        .transparent-bg-text::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('image1.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.5;
+            z-index: -1;
+        }      
+
+
+    </style>
+
+    <nav class="navbar bg-dark navbar-dark p-3 navbar-expand-lg">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand fw-bolder">我的求學歷程</a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="Introduce.html" class="nav-link fw-bolder">自我介紹</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="skill.html" class="nav-link fw-bolder">我的技能</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link fw-bolder">關於我</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <div class="d-flex flex-column justify-content-center align-items-center p-5 border-bottom transparent-bg-text">
+        <div>
+            <h1 class="fw-bolder">關於我</h1>
+        </div>
+        <div class="col-lg-6 text-center mx-auto">
+            <h3 class="lead m-4 fw-bolder">
+                我的聯絡方式~~~
+            </h3>
+
+        </div>
+
+    </div>
+
+
+     <div class="p-5" style="background-color: aliceblue">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="fw-bolder">以下是我的社群帳號，想要認識歡迎參觀~</h1>
+            </div>
+            <div class="row g-4 align-items-center">
+                <div class="d-grid gap-2 col-6 mx-auto">
+                <a class="btn btn-outline-secondary" type="button" href="https://x.com/gen11056">X</ㄇ>
+                <a class="btn btn-outline-primary" type="button" href="https://www.facebook.com/shou.wagen">Facebook</a>
+                <a class="btn btn-outline-danger" type="button" href="https://www.instagram.com/gen11056/">Instergram</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="p-4 border-top">
+        <div class="container align-items-center justify-content-between d-flex">
+            <p class="mb-0 text-muted">
+                &copy;2025.05.20
+            </p>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-muted">互動式網頁設計課程留</a>
+                </li>
+            </ul>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>

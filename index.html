@@ -9,9 +9,48 @@
 </head>
 <body>
 
+    <style>
+
+        .my-col{
+            background-color: aqua;
+            height: 400px;
+        
+        }
+
+
+
+        .transparent-bg-text {
+            width: 100%;
+            height: 400px;
+            position: relative;
+            padding: 20px;
+            color:black;
+            z-index: 1;
+            }
+
+        .transparent-bg-text::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('image1.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.5;
+            z-index: -1;
+        }      
+
+
+
+
+    </style>
+
     <nav class="navbar bg-dark navbar-dark p-3 navbar-expand-lg">
-        <div class="container">
-            <a href="" class="navbar-brand">自我介紹</a>
+        <div class="container-fluid">
+            <a href="" class="navbar-brand fw-bolder">我的求學歷程</a>
 
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
@@ -19,35 +58,88 @@
               </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a href="" class="nav-link">介紹</a>
+                        <a href="Introduce.html" class="nav-link fw-bolder">自我介紹</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">內容</a>
+                        <a href="skill.html" class="nav-link fw-bolder">我的技能</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link fw-bolder">關於我</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="p-5 text-center">
-        <h1>Bootstrap 教學課程</h1>
-        <div class="col-lg-6 mx-auto">
-            <p class="lead m-4">
-                文字介紹內容
+    <div class="d-flex flex-column justify-content-center align-items-center p-5 border-bottom transparent-bg-text ">
+        <div>
+            <h1 class="fw-bolder">ようこそ僕のネットワークへ</h1>
+        </div>
+        
+        <div class="col-lg-6 text-center mx-auto">
+            <p class="lead m-4 fw-bolder">
+            歡迎光臨 GEN 的網頁，請點選下列的卡片開始導覽~~~
             </p>
-            <button class="btn btn-primary btn-lg">看更多</button>
         </div>
     </div>
 
-    <p style="text-align: center">
-        B11056031 鍾和諺 自我介紹
-    </p>
-    
-    <p style="text-align: center">
-        こんにちは,僕はショウと申します,よろしくお願いします112
-    </p>
+    <div class="p-5">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col-lg">
+                    <div class="card shadow-lg">
+                        <img src="my.JPG" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title fw-bolder">自我介紹
+                            </h3>
+                            <p class="card-text fw-bolder">可以加快認識我的速度?</p>
+                            <a href="Introduce.html" class="btn btn-primary">用力點下去</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <div class="card shadow-lg">
+                        <img src="school.JPG" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title fw-bolder">我的技能
+                            </h3>
+                            <p class="card-text fw-bolder">從上高職以來我考過的技能檢定</p>
+                            <a href="skill.html" class="btn btn-primary">用力點下去</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <div class="card shadow-lg d-flex justify-content-center align-items-center" style="width: auto; height: auto;">
+                        <img src="beach.JPG" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title fw-bolder">關於我
+                            </h3>
+                            <p class="card-text fw-bolder">有興趣的話可以聯絡我~~~</p>
+                            <a href="about.html" class="btn btn-primary">用力點下去</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="p-4 border-top">
+        <div class="container align-items-center justify-content-between d-flex">
+            <p class="mb-0 text-muted">
+                &copy;2025.05.20
+            </p>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-muted">互動式網頁設計課程留</a>
+                </li>
+            </ul>
+
+        </div>
+    </footer>
+
+
 
 
 

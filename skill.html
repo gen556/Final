@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>僕のネット</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+<body>
+
+    <style>
+
+        .my-col{
+            background-color: aqua;
+            height: 400px;
+        
+        }
+
+        .transparent-bg-text {
+            width: 100%;
+            height: 400px;
+            position: relative;
+            padding: 20px;
+            color:black;
+            z-index: 1;
+            }
+
+        .transparent-bg-text::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('image1.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.5;
+            z-index: -1;
+        }      
+
+
+    </style>
+
+    <nav class="navbar bg-dark navbar-dark p-3 navbar-expand-lg">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand fw-bolder">我的求學歷程</a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="Introduce.html" class="nav-link fw-bolder">自我介紹</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="skill.html" class="nav-link fw-bolder">我的技能</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link fw-bolder">關於我</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="d-flex flex-column justify-content-center align-items-center p-5 border-bottom transparent-bg-text ">
+        <div>
+            <h1 class="fw-bolder">我的技能</h1>
+        </div>
+        
+        <div class="col-lg-6 text-center mx-auto">
+            <h3 class="lead m-4 fw-bolder">
+                從高職到線索考取的證照部分詳細圖片~~~
+            </h3>
+        </div>
+    </div>
+
+
+    <div class="p-5" style="background-color: aliceblue">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="fw-bolder">證照名稱:電腦軟體應用丙級</h1><br>
+                    <br>
+                <h3 class="fw-bolder">心得:
+                </h3><br>
+                <h3 class="fw-bolder">
+                這是我人生的第一張證照，當初我還在想為什麼老師要我們考這個東西，原來這些證照在未來會對一些技職的學生有一些加分的幫助，且之後還會有更多的證照需要去考取，所以我就進我的全力去爭取這些證明。
+                </h3>
+                
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="3.jpg" class="img-fluid rounded-3 shadow-lg"alt="圖片">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="p-5" style="background-color: rgb(160, 184, 184)">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6 text-center">
+                    <img src="1.jpg" class="img-fluid rounded-3 shadow-lg"alt="圖片">
+                </div>
+
+                <div class="col-lg-6">
+                    <h1 class="fw-bolder">證照名稱:網頁設計丙級</h1><br>
+                    <br>
+                    <div>
+                        <h3 class="fw-bolder">心得:
+                        </h3><br>
+                        <h3 class="fw-bolder">
+                        對於這張證照的訓練過程我是很清楚，這也是我第一張的網頁設計證明，整個訓練過程共有五個題型，正式考試會從中抽取其中一個題目作為考試的題目，其中以主題三的題目為最簡單的題目，主題二的題目最難，剛好我信運的抽到了主題三，才順利地拿下這個證照。
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="p-5" style="background-color: aliceblue">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="fw-bolder">證照名稱:電腦軟體應用乙級</h1><br>
+                    <br>
+                <h3 class="fw-bolder">心得:
+                </h3><br>
+                <h3 class="fw-bolder">
+                這是電腦軟體應用丙級的下一級，也是進階級，在整個訓練過程中，由於題情變化多端，又需要利用不同的辦公軟體去協調完成整個專案，在這個部份我只有一句話能形容這個考試級別，準地獄級別.....
+                </h3>
+                
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="2.jpg" class="img-fluid rounded-3 shadow-lg"alt="圖片">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="p-5" style="background-color: rgb(160, 184, 184)">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6 text-center">
+                    <img src="4.jpg" class="img-fluid rounded-3 shadow-lg"alt="圖片">
+                </div>
+
+                <div class="col-lg-6">
+                    <h1 class="fw-bolder">證照名稱:中華民國商業能力檢定第三級</h1><br>
+                    <br>
+                    <div>
+                        <h3 class="fw-bolder">心得:
+                        </h3><br>
+                        <h3 class="fw-bolder">
+                        這個的考照內容為人工會計記帳的部分，就是寫一般的會計題目，全部選擇題，但是其中的計算過程不能使用計算機計算，這部分來說對於我們比較吃力，但還好最後還是勉強通過www
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="p-5" style="background-color: aliceblue">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="fw-bolder">證照名稱:TQC中文輸入進階級</h1><br>
+                    <br>
+                <h3 class="fw-bolder">心得:
+                </h3><br>
+                <h3 class="fw-bolder">
+                    這張證照對我來說比較一定的意義，我比較在乎的中打的速度，用這個中文注音的輸入法已經算是很簡單的部分了，但是我還是無法突破我的打字速度。原因是我在邊打邊看文章的時候，腦袋無法順利地接收訊息，導致我打字還是會按到別的鍵或是兩個鍵一起按的狀況，我最後的成績結果是剛好達到一般的程度在上去一點點，這個部份我比較不太滿意，但是我會繼續練下去以達到我理想的速度。
+                </h3>
+                
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="5.jpg" class="img-fluid rounded-3 shadow-lg"alt="圖片">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="p-5" style="background-color: rgb(160, 184, 184)">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6 text-center">
+                    <img src="6.jpg" class="img-fluid rounded-3 shadow-lg"alt="圖片">
+                </div>
+
+                <div class="col-lg-6">
+                    <h1 class="fw-bolder">證照名稱:TQC Excel 實用級</h1><br>
+                    <br>
+                    <div>
+                        <h3 class="fw-bolder">心得:
+                        </h3><br>
+                        <h3 class="fw-bolder">
+                        這個是我的第一張辦公室軟體檢定實用級證照，這個excel在處理資料的過程中也是經過許多複雜程序的問題，最後要將所的數據轉換成圖像化顯示出來，雖然這個式基礎的處理程序，但還是覺得這個要快速上手也不容易。
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="p-5" style="background-color: aliceblue">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="fw-bolder">證照名稱:電子商務分析師標準級</h1><br>
+                    <br>
+                <h3 class="fw-bolder">心得:
+                </h3><br>
+                <h3 class="fw-bolder">
+                    這是我大學的第一張證照，這個就比較相對入門，會考歷年的題庫作為考試，所以我們就只需要詳讀歷年的考題即可過關，而且這一張我覺得很讚，畢竟是大學期間所考取的www
+                </h3>
+                
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="7.jpg" class="img-fluid rounded-3 shadow-lg"alt="圖片">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="p-5" style="background-color: rgb(160, 184, 184)">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6 text-center">
+                    <img src="55.png" class="img-fluid rounded-3 shadow-lg"alt="圖片">
+                </div>
+
+                <div class="col-lg-6">
+                    <h1 class="fw-bolder">證照名稱:Certiport Network Security</h1><br>
+                    <br>
+                    <div>
+                        <h3 class="fw-bolder">心得:
+                        </h3><br>
+                        <h3 class="fw-bolder">
+                            這是我第一也是目前唯一的國際證照，屬於資訊安全的證照考試，這個部分考試內容是考歷屆的題庫內容，我原本以為有可能是原文題庫，結果是中文題庫，還好鬆了一口氣，最後也是順利地通過了。
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <footer class="p-4 border-top">
+        <div class="container align-items-center justify-content-between d-flex">
+            <p class="mb-0 text-muted">
+                &copy;2025.05.20
+            </p>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-muted">互動式網頁設計課程留</a>
+                </li>
+            </ul>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>
